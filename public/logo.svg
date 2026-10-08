@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Cyan to Blue Gradient -->
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <!-- Magenta to Purple Gradient -->
+    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f355da" />
+      <stop offset="100%" stop-color="#9b51e0" />
+    </linearGradient>
+
+    <!-- Full Spectrum Neon -->
+    <linearGradient id="neonGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f7ff" />
+      <stop offset="50%" stop-color="#7000ff" />
+      <stop offset="100%" stop-color="#ff00ea" />
+    </linearGradient>
+
+    <!-- Glowing Filter for Dark Theme -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#neonGlow)">
+    <!-- ================= Left Bracket { ================= -->
+    <path 
+      d="M 125 195 
+         C 95 195, 78 215, 78 245 
+         L 78 290 
+         C 78 310, 68 320, 52 325 
+         C 68 330, 78 340, 78 360 
+         L 78 405 
+         C 78 435, 95 455, 125 455"
+      stroke="url(#neonCyan)" 
+      stroke-width="15" 
+      stroke-linecap="round" 
+      stroke-linejoin="round"
+    />
+
+    <!-- ================= Right Bracket } ================= -->
+    <path 
+      d="M 375 195 
+         C 405 195, 422 215, 422 245 
+         L 422 290 
+         C 422 310, 432 320, 448 325 
+         C 432 330, 422 340, 422 360 
+         L 422 405 
+         C 422 435, 405 455, 375 455"
+      stroke="url(#neonPurple)" 
+      stroke-width="15" 
+      stroke-linecap="round" 
+      stroke-linejoin="round"
+    />
+
+    <!-- ================= The Geometric Nest (Isometric Box) ================= -->
+    <!-- Nest Outer Contour -->
+    <path 
+      d="M 250 220 
+         L 390 280 
+         L 390 390 
+         L 250 470 
+         L 110 390 
+         L 110 280 Z" 
+      stroke="url(#neonGradient)" 
+      stroke-width="9" 
+      stroke-linejoin="round"
+    />
+
+    <!-- Nest Isometric Internal Dividers -->
+    <path d="M 250 220 L 250 470" stroke="url(#neonGradient)" stroke-width="7" />
+    <path d="M 110 280 L 250 345 L 390 280" stroke="url(#neonGradient)" stroke-width="7" />
+
+    <!-- Nest Left Facet Geometric Twigs -->
+    <path d="M 110 335 L 200 320 L 150 415" stroke="url(#neonCyan)" stroke-width="7" stroke-linecap="round" />
+    <path d="M 160 365 L 250 410" stroke="url(#neonCyan)" stroke-width="7" stroke-linecap="round" />
+    <path d="M 140 295 L 210 380" stroke="url(#neonCyan)" stroke-width="7" stroke-linecap="round" />
+    <path d="M 200 440 L 250 470" stroke="url(#neonCyan)" stroke-width="7" stroke-linecap="round" />
+
+    <!-- Nest Right Facet Geometric Twigs -->
+    <path d="M 390 335 L 300 320 L 350 415" stroke="url(#neonPurple)" stroke-width="7" stroke-linecap="round" />
+    <path d="M 340 365 L 250 410" stroke="url(#neonPurple)" stroke-width="7" stroke-linecap="round" />
+    <path d="M 360 295 L 290 380" stroke="url(#neonPurple)" stroke-width="7" stroke-linecap="round" />
+    <path d="M 300 440 L 250 470" stroke="url(#neonPurple)" stroke-width="7" stroke-linecap="round" />
+
+    <!-- Nest Top Facet Pattern -->
+    <path d="M 180 250 L 270 295" stroke="url(#neonCyan)" stroke-width="7" stroke-linecap="round" />
+    <path d="M 230 335 L 320 250" stroke="url(#neonPurple)" stroke-width="7" stroke-linecap="round" />
+    <path d="M 230 295 L 280 320" stroke="url(#neonGradient)" stroke-width="7" stroke-linecap="round" />
+
+    <!-- Nest Perch Stems -->
+    <path d="M 230 220 L 255 180" stroke="url(#neonCyan)" stroke-width="8" stroke-linecap="round" />
+    <path d="M 270 220 L 250 180" stroke="url(#neonPurple)" stroke-width="8" stroke-linecap="round" />
+
+    <!-- ================= Geometric Cyber Bird ================= -->
+    <!-- Bird Geometric Wing (Star / Polygons) -->
+    <polygon 
+      points="205,35 250,95 195,125" 
+      stroke="url(#neonCyan)" 
+      stroke-width="8" 
+      stroke-linejoin="round"
+    />
+    <polygon 
+      points="140,85 240,85 195,145" 
+      stroke="url(#neonCyan)" 
+      stroke-width="8" 
+      stroke-linejoin="round"
+    />
+    <polygon 
+      points="155,160 250,150 205,210" 
+      stroke="url(#neonCyan)" 
+      stroke-width="8" 
+      stroke-linejoin="round"
+    />
+    <path d="M 205 150 L 205 210" stroke="url(#neonCyan)" stroke-width="7" />
+
+    <!-- Bird Head & Body Contour -->
+    <path 
+      d="M 240 180 
+         C 285 180, 335 150, 335 90 
+         C 335 45, 295 40, 275 40 
+         C 245 40, 230 65, 225 85" 
+      stroke="url(#neonPurple)" 
+      stroke-width="8" 
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <!-- Bird Beak -->
+    <polygon 
+      points="335,65 365,85 330,95" 
+      stroke="url(#neonPurple)" 
+      stroke-width="7" 
+      stroke-linejoin="round"
+    />
+
+    <!-- Bird Eye -->
+    <circle cx="305" cy="75" r="9" fill="url(#neonPurple)" />
+
+    <!-- Bird Breast to Tail Connection -->
+    <path d="M 230 145 C 260 170, 290 150, 305 130" stroke="url(#neonPurple)" stroke-width="7" stroke-linecap="round" />
+  </g>
+</svg>
